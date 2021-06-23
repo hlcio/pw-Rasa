@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main class="main-container" role="main">
+        <header>
+            <h1>Como aprender <br>
+                RASA</h1>
+
+            <form method="POST" action="home.html" onsubmit="getName()">
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                <button type="submit" id="button" value="submit">Cadastrar</button>
+                    
+            </form>
+        </header>
+
+
+        <div id="img">
+            <img src="logo/rasa.png" alt="logo_rasa">
+        </div>
+
+        <footer>
+            <p>Desenvolvido por Dennis Salazar, Mariana Jovanelli, Matheus Fidelis e Rogerio Ciccone</p>
+        </footer>
+
+
+        <script>
+            function getName() {
+                
+                let tagName = document.getElementById('name').value;
+                let result = document.getElementById('result');
+                result.textContent = tagName;
+                
+                
+            }
+        </script>
+
+    </main>
+</body>
+
+</html>
