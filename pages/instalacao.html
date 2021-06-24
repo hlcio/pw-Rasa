@@ -2,8 +2,8 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="styles/instalação.css">
+    <title>Instalação</title>
 </head>
 
 <body>
@@ -14,27 +14,45 @@
         <h2>Olá, event.tagName()</h2>
    </header>
 
-        
+   <div id="tittle">  
+    <h3>
+    Instalação
+</div>
+ 
+</h3>
 
     <div id="content">
-        <h3>
-            Rasa é um framework open source de Machine Learning para a criação de 
-            assistentes de IA e chatbots. Geralmente, você não precisa de nenhuma 
-            experiência em linguagem de programação para trabalhar com Rasa.
-            Embora exista o “Rasa Action Server”, onde você precisa escrever código  
-            em Python, que é usado principalmente para acionar ações externas, como 
-            chamar API do Google ou API REST, etc.
-        </h3>
-    </div>
-
-    <div id="img">
-        <img src="logo2/rasa_logo_2.png" alt="logo_rasa_2">
+        <h5>1. Configuração do ambiente Python #</h5>
+        <h4>
+            Verifique se o seu ambiente Python já está configurado:<br>
+             python3 --version<br>
+             pip3 --version<br>
+             Se esses pacotes já estiverem instalados, 
+             esses comandos devem exibir os números da versão de cada etapa 
+             e você pode pular para a próxima etapa.
+        </h4>
+       
+        <h5>2. Configuração do ambiente virtual</h5>
+      
+            <h4>
+            Esta etapa é opcional, mas é altamente recomendável isolar projetos Python usando ambientes 
+            virtuais. Ferramentas como virtualenv e virtualenvwrapper fornecem ambientes Python isolados,
+            que são mais limpos do que a instalação de pacotes em todo o sistema (pois evitam conflitos de 
+            dependência). Eles também permitem que você instale pacotes sem privilégios de root.
+        </h4>
+       <h5>3. Instale o Rasa Open Source</h5>
+        <h4>
+            Primeiro, certifique-se de que sua versão do pip está atualizada:<br>
+            pip3 install -U pip<br>
+            Para instalar o Rasa Open Source:<br>
+            pip3 install rasa
+        </h4>
     </div>
 
     <div id="buttons">
-       <a href="/instalacao/instalacao.html"><h4>Instalação</h4></a> 
-        <h4>Rasa NLU</h4>
-        <h4>Rasa Core</h4>
+       <a href="home.html"><h6>Home</h6></a> 
+        <a href="nlu.html"><h6>Rasa NLU</h6></a>  
+       <a href="core.html"><h6>Rasa Core</h6></a> 
     </div>
 
     <footer>
