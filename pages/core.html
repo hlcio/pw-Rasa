@@ -10,7 +10,7 @@
     
    <header>
         <h1>Como aprender RASA</h1>
-        <h2>Olá, ......</h2>
+        <h2>Olá, <b id="nomeUser"></b></h2>
    </header>
            <h4>Rasa Core</h4>
     <div id="content">
@@ -43,7 +43,12 @@
     </footer>
 
     <script>
+        var registro = localStorage.getItem("storage");
+        var nomeCompleto = document.getElementById('nomeUser');
+        var parse = JSON.parse(registro);
+        var obj = JSON.parse(parse);
         
+        nomeCompleto.innerHTML = obj.name
     </script>
 </body>
 

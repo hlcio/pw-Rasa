@@ -13,7 +13,7 @@
             <h1>Como aprender <br>
                 RASA</h1>
 
-            <form method="POST" action="home.html" onsubmit="getName()">
+            <form method="POST" id="formulario" action="home.html" onsubmit="getName()">
                 <input type="text" id="name" name="name" placeholder="Digite seu nome">
                 <button type="submit" id="button" value="submit">Cadastrar</button>
                     
@@ -29,19 +29,18 @@
             <p>Desenvolvido por Dennis Salazar, Mariana Jovanelli, Matheus Fidelis e Rogerio Ciccone</p>
         </footer>
 
+       
+    <script>
+        var form = document.getElementById("formulario");
+        form.addEventListener("submit", function () {
+            var dados = JSON.stringify({
+                name:document.getElementById("name").value,
+            });
+            localStorage.setItem("storage", JSON.stringify(dados));
+        })
+    </script>
 
-        <script>
-            function getName() {
-                
-                let tagName = document.getElementById('name').value;
-                let result = document.getElementById('result');
-                result.textContent = tagName;
-                
-                
-            }
-        </script>
-
-    </main>
+        </main>
 </body>
 
 </html>
